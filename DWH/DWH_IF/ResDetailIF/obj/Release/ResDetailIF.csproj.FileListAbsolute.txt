@@ -1,0 +1,15 @@
+C:\加西\DWH_IF\ResDetailIF\bin\Release\ResDetailIF.exe.config
+C:\加西\DWH_IF\ResDetailIF\bin\Release\ResDetailIF.exe
+C:\加西\DWH_IF\ResDetailIF\bin\Release\ResDetailIF.pdb
+C:\加西\DWH_IF\ResDetailIF\bin\Release\ComLib.dll
+C:\加西\DWH_IF\ResDetailIF\bin\Release\log4net.dll
+C:\加西\DWH_IF\ResDetailIF\bin\Release\SlnCom.dll
+C:\加西\DWH_IF\ResDetailIF\bin\Release\ComLib.pdb
+C:\加西\DWH_IF\ResDetailIF\bin\Release\SlnCom.pdb
+C:\加西\DWH_IF\ResDetailIF\obj\Release\ResDetailIF.csprojResolveAssemblyReference.cache
+C:\加西\DWH_IF\ResDetailIF\obj\Release\ResDetailIF.Main.srvResDetailIF.resources
+C:\加西\DWH_IF\ResDetailIF\obj\Release\ResDetailIF.Main.TestFrm.resources
+C:\加西\DWH_IF\ResDetailIF\obj\Release\ResDetailIF.Properties.Resources.resources
+C:\加西\DWH_IF\ResDetailIF\obj\Release\ResDetailIF.csproj.GenerateResource.Cache
+C:\加西\DWH_IF\ResDetailIF\obj\Release\ResDetailIF.exe
+C:\加西\DWH_IF\ResDetailIF\obj\Release\ResDetailIF.pdb

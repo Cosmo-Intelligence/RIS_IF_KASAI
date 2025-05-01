@@ -1,0 +1,87 @@
+<<RisHisSvr_Irai>>
+[1.0.1.3]
+2019/10/30
+変更点
+①ToHisInfo 登録修正
+患者更新受信時、ToHisInfo登録を行わない
+
+[1.0.1.2]
+2018/09/15
+変更点
+①ToHisInfo 登録内容修正
+FromHisSequence → FromRisSequence
+MessageID1  = 患者ID
+MessageID2  = ｶﾅ氏名
+
+[1.0.1.1]
+2018/08/30
+変更点
+①不具合修正
+緊急区分 = 1 が受信できない不具合修正
+
+[1.0.1.0]
+2018/08/30
+変更点
+①検査進捗　更新
+未受未満(ExMainTable.Status < 10) の時、未受(ExMainTable.Status = 0)に更新
+
+②部位情報 変更
+部位情報取得先をBuiMasterに変更(←BuiSetMaster)
+(条件)KensaType_ID = 検査種コード And Bui_ID先頭6桁 = 項目コード
+
+OrderBuiTable.KensaHouhou_ID = BuiMaster.Def_KensaHouhou_ID
+OrderBuiTable.Houkou_ID = BuiMaster.Def_Houkou_ID
+OrderBuiTable.Sayuu_ID = 0 (固定)
+
+③エラー内容登録
+オーダ受信エラー時、エラー内容をExtendOrderInfo.ADDENDUM20 に登録
+
+④ToHisInfo登録
+受信処理成功時、RequestType = PR01 のレコード登録
+
+⑤ログファイル変更
+日単位ファオルダ作成
+1ファイルのサイズを設定 ris_tcp.ini[LOG][FileSize]
+
+
+----------------------------------------------------------------
+<<RisHisSD_Receipt>>
+[1.0.1.0]
+2018/08/30
+
+変更点
+①ログファイル変更
+日単位ファオルダ作成
+1ファイルのサイズを設定 ris_tcp.ini[LOG][FileSize]
+
+
+----------------------------------------------------------------
+<<RisHisSD_Jissi>>
+[1.0.1.1]
+2018/09/03
+変更点
+①中止部位送信
+RIS作成オーダの中止部位も送信対象に追加
+
+
+[1.0.1.0]
+2018/08/30
+
+変更点
+①部位情報 変更
+項目コード　ExBuiTable.Bui_ID 先頭6桁送信
+
+②ログファイル変更
+日単位ファオルダ作成
+1ファイルのサイズを設定 ris_tcp.ini[LOG][FileSize]
+
+
+----------------------------------------------------------------
+<<RisHis_Shema>>
+[1.0.1.0]
+2018/08/30
+
+変更点
+①ログファイル変更
+日単位ファオルダ作成
+1ファイルのサイズを設定 ris_tcp.ini[LOG][FileSize]

@@ -1,0 +1,16 @@
+C:\加西\DWH_IF\SlnCom\bin\Debug\SlnCom.dll
+C:\加西\DWH_IF\SlnCom\bin\Debug\SlnCom.pdb
+C:\加西\DWH_IF\SlnCom\bin\Debug\ComLib.dll
+C:\加西\DWH_IF\SlnCom\bin\Debug\log4net.dll
+C:\加西\DWH_IF\SlnCom\bin\Debug\ComLib.pdb
+C:\加西\DWH_IF\SlnCom\obj\Debug\SlnCom.csprojResolveAssemblyReference.cache
+C:\加西\DWH_IF\SlnCom\obj\Debug\SlnCom.dll
+C:\加西\DWH_IF\SlnCom\obj\Debug\SlnCom.pdb
+E:\JOB\加西\DWH_IF\SlnCom\bin\Debug\SlnCom.dll
+E:\JOB\加西\DWH_IF\SlnCom\bin\Debug\SlnCom.pdb
+E:\JOB\加西\DWH_IF\SlnCom\bin\Debug\ComLib.dll
+E:\JOB\加西\DWH_IF\SlnCom\bin\Debug\log4net.dll
+E:\JOB\加西\DWH_IF\SlnCom\bin\Debug\ComLib.pdb
+E:\JOB\加西\DWH_IF\SlnCom\obj\Debug\SlnCom.csprojResolveAssemblyReference.cache
+E:\JOB\加西\DWH_IF\SlnCom\obj\Debug\SlnCom.dll
+E:\JOB\加西\DWH_IF\SlnCom\obj\Debug\SlnCom.pdb

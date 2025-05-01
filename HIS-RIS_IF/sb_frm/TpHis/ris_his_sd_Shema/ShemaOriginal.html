@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="YOKOGAWA">
+<TITLE>*ブラウザタイトル*</TITLE>
+<!-- ↓　色の設定は、<STYLE TYPE="text/css">　～　</STYLE>の部分を以下のようにします -->
+<!-- ↓　「*画面背景色*」を「表示したい色番号」にします。他も同じです -->
+<STYLE TYPE="text/css">
+<!--
+	.gamen_iro {background-color:*画面背景色*;}
+	.tbl_iro {background-color:*テーブル背景色*;}
+	.oomidasi {background-color:*タイトル色*;}
+	.txt_Disp {background-color:*データヘダー色*;}
+	.txt_Input {background-color:*データ色*;}
+	.midasi {text-align:center; font-weight:bold; background-color:*部位行色*;}
+	.gazou {background-color:*画像行色*;}
+	.komento {vertical-align:top; background-color:*部位コメント行色*;}
+
+	.gazoutype {width:186px; height:180px; border:0;}
+	.dmy_gazou{width:186px; height:40px; background-color:red; filter:Alpha(opacity=0);}
+	.dmy_txt{width:50px; height:10px; background-color:red; filter:Alpha(opacity=0);}
+-->
+</STYLE>
+</HEAD>
+<BODY TOPMARGIN=5 LEFTMARGIN=5 RIGHTMARGIN=5 class=gamen_iro>
+
+<table align=center border=0 cellspacing=0 cellpadding=0 class=oomidasi><tr><td>
+<table width=200px border=5 style='BORDER:ridge;'>
+    <tr><td align=center style='font-size:16pt;'><b>シェーマ画像</b></td></tr>
+</table>
+</td></tr></table>
+
+<br>
+<table style='border:outset 3px;' class=tbl_iro><tr><td>
+<table border=1 cellspacing=0 cellpadding=3px width=965px style='margin-top:3px; margin-left:3px;'>
+    <tr>
+<!-- ↓　「*患者ID*」を「表示したい患者ID」にします -->
+<!-- ↓　空白とする場合、「*患者ID*」を「<span class=dmy_txt></span>」にします。他も同じです -->
+      	<td width=80px align="right" class=txt_Disp>患者ID</td>
+      	<td width=140px class=txt_Input>*患者ID*</td>
+      	<td width=80px align="right" class=txt_Disp>氏名</td>
+      	<td width=180px class=txt_Input>*氏名*</td>
+      	<td width=85px align="right" class=txt_Disp>実施検査日</td>
+      	<td class=txt_Input>*実施検査日*</td>
+      	<td width=80px align="right" class=txt_Disp>検査種別</td>
+      	<td width=110px class=txt_Input>*検査種別*</td>
+    </tr>
+    <tr>
+      	<td class=txt_Disp align="right">オーダNO</td>
+      	<td class=txt_Input>*ｵｰﾀﾞNO*</td>
+      	<td class=txt_Disp align="right">依頼科</td>
+      	<td class=txt_Input>*依頼科*</td>
+      	<td class=txt_Disp align="right">依頼医</td>
+      	<td class=txt_Input colspan=3>*依頼医*</td>
+    </tr>
+</table>
+</td></tr></table>
+
+<br><br>●絵をクリックすると原寸大で表示されます。<br>
+
+<table class=tbl_iro><tr><td>
+<table border=1px cellspacing=1 cellpadding=3px>
+	<tr height=40px class=midasi>
+<!-- ↓　「*部位01*」を「表示したいタイトル」にします -->
+<!-- ↓　空白とする場合、「*部位01*」を「<span class=dmy_gazou></span>」にします -->
+		<td>*部位01*</td>
+		<td>*部位02*</td>
+		<td>*部位03*</td>
+		<td>*部位04*</td>
+		<td>*部位05*</td>
+	</tr>
+	<tr height=180px class=gazou>
+<!-- ↓　「*ｼｪｰﾏ画像01*」を「画像のリンク先」「表示したい画像の場所」にします　-->
+<!-- ↓　空白とする場合、行を「<td><span class=dmy_gazou></span></td>」に置き換えます -->
+		<td><A href="*ｼｪｰﾏ画像01*"><IMG src="*ｼｪｰﾏ画像01*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像02*"><IMG src="*ｼｪｰﾏ画像02*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像03*"><IMG src="*ｼｪｰﾏ画像03*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像04*"><IMG src="*ｼｪｰﾏ画像04*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像05*"><IMG src="*ｼｪｰﾏ画像05*" class=gazoutype></A></td>
+	</tr>
+</table>
+
+<br>
+<table border=1px cellspacing=1 cellpadding=3px>
+	<tr height=40px class=midasi>
+		<td>*部位06*</td>
+		<td>*部位07*</td>
+		<td>*部位08*</td>
+		<td>*部位09*</td>
+		<td>*部位10*</td>
+	</tr>
+	<tr height=180px class=gazou>
+		<td><A href="*ｼｪｰﾏ画像06*"><IMG src="*ｼｪｰﾏ画像06*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像07*"><IMG src="*ｼｪｰﾏ画像07*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像08*"><IMG src="*ｼｪｰﾏ画像08*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像09*"><IMG src="*ｼｪｰﾏ画像09*" class=gazoutype></A></td>
+		<td><A href="*ｼｪｰﾏ画像10*"><IMG src="*ｼｪｰﾏ画像10*" class=gazoutype></A></td>
+	</tr>
+</table>
+</td></tr></table>
+
+</BODY>
+</HTML>

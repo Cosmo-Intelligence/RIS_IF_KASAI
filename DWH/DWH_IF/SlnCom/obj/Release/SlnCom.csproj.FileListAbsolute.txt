@@ -1,0 +1,8 @@
+C:\加西\DWH_IF\SlnCom\bin\Release\SlnCom.dll
+C:\加西\DWH_IF\SlnCom\bin\Release\SlnCom.pdb
+C:\加西\DWH_IF\SlnCom\bin\Release\ComLib.dll
+C:\加西\DWH_IF\SlnCom\bin\Release\log4net.dll
+C:\加西\DWH_IF\SlnCom\bin\Release\ComLib.pdb
+C:\加西\DWH_IF\SlnCom\obj\Release\SlnCom.csprojResolveAssemblyReference.cache
+C:\加西\DWH_IF\SlnCom\obj\Release\SlnCom.dll
+C:\加西\DWH_IF\SlnCom\obj\Release\SlnCom.pdb

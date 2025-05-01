@@ -1,0 +1,5 @@
+C:\加西\DWH_IF\ComLib\bin\Debug\ComLib.dll
+C:\加西\DWH_IF\ComLib\bin\Debug\ComLib.pdb
+C:\加西\DWH_IF\ComLib\obj\Debug\ComLib.csprojResolveAssemblyReference.cache
+C:\加西\DWH_IF\ComLib\obj\Debug\ComLib.dll
+C:\加西\DWH_IF\ComLib\obj\Debug\ComLib.pdb

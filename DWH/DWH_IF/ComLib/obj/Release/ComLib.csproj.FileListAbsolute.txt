@@ -1,0 +1,4 @@
+C:\加西\DWH_IF\ComLib\bin\Release\ComLib.dll
+C:\加西\DWH_IF\ComLib\bin\Release\ComLib.pdb
+C:\加西\DWH_IF\ComLib\obj\Release\ComLib.dll
+C:\加西\DWH_IF\ComLib\obj\Release\ComLib.pdb

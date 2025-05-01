@@ -1,0 +1,14 @@
+C:\加西\DWH_IF\AppPatientIF\bin\Release\AppPatientIF.exe.config
+C:\加西\DWH_IF\AppPatientIF\bin\Release\AppPatientIF.exe
+C:\加西\DWH_IF\AppPatientIF\bin\Release\AppPatientIF.pdb
+C:\加西\DWH_IF\AppPatientIF\bin\Release\ComLib.dll
+C:\加西\DWH_IF\AppPatientIF\bin\Release\log4net.dll
+C:\加西\DWH_IF\AppPatientIF\bin\Release\SlnCom.dll
+C:\加西\DWH_IF\AppPatientIF\bin\Release\ComLib.pdb
+C:\加西\DWH_IF\AppPatientIF\bin\Release\SlnCom.pdb
+C:\加西\DWH_IF\AppPatientIF\obj\Release\ResDetailIF.Main.srvAppPatientIF.resources
+C:\加西\DWH_IF\AppPatientIF\obj\Release\ResDetailIF.Main.TestFrm.resources
+C:\加西\DWH_IF\AppPatientIF\obj\Release\AppPatientIF.Properties.Resources.resources
+C:\加西\DWH_IF\AppPatientIF\obj\Release\AppPatientIF.csproj.GenerateResource.Cache
+C:\加西\DWH_IF\AppPatientIF\obj\Release\AppPatientIF.exe
+C:\加西\DWH_IF\AppPatientIF\obj\Release\AppPatientIF.pdb
