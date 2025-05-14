@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Data;
 using System.Threading;
-using System.Data.OracleClient;
+// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+// .NETFramework,Version=v4.0 → 4.8に対応
+//using System.Data.OracleClient;
+using Oracle.DataAccess.Client;
+// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 //
 using ComLib.log;
+using Oracle.DataAccess.Types;
 
 namespace ComLib.database
 {
@@ -240,7 +245,10 @@ namespace ComLib.database
 			DataTable dt = new DataTable();
 			using (OracleDataAdapter da = new OracleDataAdapter())
 			{
-				using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+				// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+				// using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+				using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection))
+				// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 				{
 					da.SelectCommand = cmd;
 					da.Fill(dt);
@@ -268,7 +276,10 @@ namespace ComLib.database
 			DataTable dt = new DataTable();
 			using (OracleDataAdapter da = new OracleDataAdapter())
 			{
-				using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+				// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+				// using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+				using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection))
+				// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 				{
 					cmd.CommandType = CommandType.Text;
 					if (prms != null && prms.Count > 0)
@@ -299,7 +310,10 @@ namespace ComLib.database
 			//SQLLog出力
 			this.LoggingSQL(sSQL, prms);
 
-			using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+			using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection))
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 			{
 				if (vMtran != null)
 				{
@@ -327,7 +341,10 @@ namespace ComLib.database
 				throw new OraConnectException("DB接続がOpenしていません");
 			}
 
-			using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection, vMtran))
+			using (OracleCommand cmd = new OracleCommand(sSQL, vMconnection))
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西)
 			{
 				if (vMtran != null)
 				{
@@ -546,9 +563,12 @@ namespace ComLib.database
 			DateTime value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.DateTime);
-			pm.Direction = direct;
-			pm.Value = value;
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.DateTime);
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.TimeStamp);
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
+				pm.Direction = direct;
+			pm.Value = new OracleTimeStamp(value);
 			List.Add(pm);
 		}
 		/// <summary>
@@ -578,7 +598,10 @@ namespace ComLib.database
 			DateTime? value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.DateTime);
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.DateTime);
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.TimeStamp);
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 			pm.Direction = direct;
 			if (value.HasValue == true)
 			{
@@ -620,7 +643,10 @@ namespace ComLib.database
 			string value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.VarChar, size);
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.VarChar, size);
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.Varchar2, size);
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 			pm.Direction = direct;
 			if (string.IsNullOrEmpty(value) == true)
 			{
@@ -700,7 +726,10 @@ namespace ComLib.database
 			int value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.Decimal, size);
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 			pm.Direction = direct;
 			pm.Value = value;
 			List.Add(pm);
@@ -719,7 +748,10 @@ namespace ComLib.database
 			int? value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.Decimal, size);
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 			pm.Direction = direct;
 			if (value.HasValue == true)
 			{
@@ -746,7 +778,10 @@ namespace ComLib.database
 			decimal value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.Decimal, size);
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 			pm.Direction = direct;
 			pm.Value = value;
 			List.Add(pm);
@@ -765,7 +800,10 @@ namespace ComLib.database
 			decimal? value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, size);
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.Decimal, size);
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 			pm.Direction = direct;
 			if (value.HasValue == true)
 			{
@@ -792,7 +830,11 @@ namespace ComLib.database
 			decimal value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, precision, ParameterDirection.Input, true,
+
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, precision, ParameterDirection.Input, true,
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.Decimal, precision, ParameterDirection.Input, true,
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 				precision, scale,
 				ParameterName, DataRowVersion.Current,
 				value);
@@ -813,7 +855,10 @@ namespace ComLib.database
 			decimal? value
 			)
 		{
-			OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, precision, ParameterDirection.Input, true,
+			// 2025.05.14 Mod Cosmo＠Kasama Start 市立加西
+			// OracleParameter pm = new OracleParameter(ParameterName, OracleType.Number, precision, ParameterDirection.Input, true,
+			OracleParameter pm = new OracleParameter(ParameterName, OracleDbType.Decimal, precision, ParameterDirection.Input, true,
+			// 2025.05.14 Mod Cosmo＠Kasama End   市立加西
 				precision, scale,
 				ParameterName, DataRowVersion.Current,
 				DBNull.Value);
