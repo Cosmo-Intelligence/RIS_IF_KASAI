@@ -61,9 +61,10 @@ WHERE REQUESTID =:REQUESTID";
 			string result = isOk ? "OK" : "NG";
 			//ÉpÉâÉÅÅ[É^
 			OraParams prms = new OraParams();
-			prms.Add("REQUESTID", 8, requestID);
 			prms.Add("TRANSFERRESULT", 10, result);
 			prms.Add("TRANSFERTEXT", 1024, errTxt);	//Long Å® Ç∆ÇËÇ†Ç¶Ç∏1024ê›íË
+			prms.Add("REQUESTID", 8, requestID);
+
 			try
 			{
 				int count = AppGlobal.RISDB.ExecuteSQL(sqlStr, prms);
