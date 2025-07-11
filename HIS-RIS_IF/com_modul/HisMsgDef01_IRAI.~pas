@@ -250,8 +250,7 @@ const
   IRAIBLOODRHLEN       = 1;
   IRAIKANSENLEN        = 20;
   IRAIKANSENCOMLEN     = 20;
-//  IRAIKINKILEN         = 10;    2025.7.11 cosmo
-  IRAIKINKILEN         = 20;
+  IRAIKINKILEN         = 10;
   IRAIKINKICOMLEN      = 20;
   IRAININSINLEN        = 8;       
   IRAIDETHDATELEN      = 8;

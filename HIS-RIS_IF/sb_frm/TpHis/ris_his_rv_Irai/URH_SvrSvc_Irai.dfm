@@ -16,7 +16,7 @@ object RisHisSvrSvc_Irai: TRisHisSvrSvc_Irai
   OnStart = ServiceStart
   OnStop = ServiceStop
   Left = 263
-  Top = 457
+  Top = 414
   Height = 314
   Width = 216
   object ServerSocket1: TServerSocket
